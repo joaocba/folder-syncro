@@ -1,38 +1,4 @@
-﻿/* 
- * FolderSyncro - A simple folder synchronization tool
- * 
- * This application synchronizes files and directories from a source folder to a replica folder.
- * It checks for new or updated files in the source and copies them to the replica.
- * Additionally, it removes files and directories from the replica that no longer exist in the source.
- * 
- * Features:
- * - Periodic synchronization based on a specified interval.
- * - Logging of actions taken during synchronization.
- * - Support for configuration via command-line arguments or a JSON configuration file.
- * 
- * Usage:
- * 1. Command-line arguments:
- *    dotnet output/FolderSync <source_folder_path> <replica_folder_path> <interval_in_seconds> <log_file_path>
- * 
- * 2. Using a configuration file:
- *    dotnet output/FolderSync <config_file_path>
- * 
- * Example command-line usage:
- *    dotnet output/FolderSync "C:\path\to\source" "C:\path\to\replica" 10 "C:\path\to\logfile.log"
- * 
- * Example configuration file (config.json):
- * {
- *     "SourceFolder": "C:\\path\\to\\source",
- *     "ReplicaFolder": "C:\\path\\to\\replica",
- *     "Interval": 10,
- *     "LogFilePath": "C:\\path\\to\\logfile.log"
- * }
- * 
- * Note: Ensure that the source folder exists before running the application.
- * Press Ctrl+C to cancel the synchronization process.
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
